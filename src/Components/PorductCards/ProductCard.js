@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
     return (
@@ -9,7 +10,7 @@ const ProductCard = ({ product }) => {
                         <img className="h-72 w-72 rounded-xl object-cover" src={product?.img} alt="" />
                         <div className="absolute h-full w-full bg-black/20 flex flex-col gap-6 items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                             <button className="bg-black text-white py-2 px-5">Add to cart</button>
-                            <button className="bg-black text-white py-2 px-5">Details</button>
+                            <Link to='/productDetails' className="bg-black text-white py-2 px-5">Details</Link>
                         </div>
                     </div>
                     <div className='px-4 pb-4'>

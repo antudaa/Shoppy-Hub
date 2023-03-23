@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
     return (
@@ -34,20 +35,20 @@ const HeroSection = () => {
                             type="text"
                             className="flex-grow w-full h-12 px-4 mb-3 text-gray bg-white transition duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-deep-purple-900 focus:border-teal-accent-700 focus:outline-none focus:shadow-outline"
                         />
-                        <a
-                            href="/"
+                        <Link
+                            to="/"
                             className="inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded shadow-md md:w-auto hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-teal-accent-700 focus:shadow-outline focus:outline-none bg-white"
                         >
                             Subscribe
-                        </a>
+                        </Link>
                     </form>
                     <p className="max-w-md mb-10 text-xs tracking-wide text-indigo-100 sm:text-sm sm:mx-auto md:mb-16">
-                        Please check out our products & our customers reviews. We don't compromise about product quality.
+                        Please check out our products & our customers reviews. We don't compromise about product Quality.
                     </p>
-                    <a
-                        href="/"
+                    <Link
+                        to="/"
                         aria-label="Scroll down"
-                        className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
+                        className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-white rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +59,7 @@ const HeroSection = () => {
                         >
                             <path d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z" />
                         </svg>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

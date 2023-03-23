@@ -1,6 +1,9 @@
 import React from 'react';
 
-const ProductDetailsCard = () => {
+const ProductDetailsCard = ({ product }) => {
+
+    console.log(product);
+
     return (
         <div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
@@ -26,7 +29,7 @@ const ProductDetailsCard = () => {
                     </div>
                     <div className="md:flex-1 px-4">
                         <h2 className="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</h2>
-                        <p className="text-gray-500 text-sm">By <a href="##" className="text-indigo-600 hover:underline">ABC Company</a></p>
+                        <p className="text-gray-500 text-sm">By <a to="##" className="text-indigo-600 hover:underline">ABC Company</a></p>
 
                         <div className="flex items-center space-x-4 my-4">
                             <div>
